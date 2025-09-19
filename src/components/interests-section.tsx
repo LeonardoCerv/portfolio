@@ -91,7 +91,7 @@ export function InterestsSection() {
               Currently Exploring
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {currentFocus.map((item, index) => (
+              {currentFocus.map((item) => (
                 <div key={item}>
                   <Badge variant="outline" className="text-sm py-2 px-4 bg-background/50 border-dashed-indie">
                     {item}
@@ -104,7 +104,7 @@ export function InterestsSection() {
 
         {/* Interests Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {interests.map((interest, index) => (
+          {interests.map((interest) => (
             <div key={interest.category}>
               <Card className="h-full border border-dashed-indie relative">
                 {/* Decorative corner */}

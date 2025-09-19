@@ -172,7 +172,7 @@ export function ProjectsSection() {
 
         {/* Featured Projects */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {featuredProjects.map((project, index) => (
+          {featuredProjects.map((project) => (
             <div key={project.title} className="group">
               <Card className="h-full border-2 border-dashed-indie relative">
                 {/* Status indicator */}
@@ -253,7 +253,7 @@ export function ProjectsSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {otherProjects.map((project, index) => (
+          {otherProjects.map((project) => (
             <div key={project.title} className="group">
               <Card className="border border-dashed-indie">
                 <CardHeader className="pb-4">

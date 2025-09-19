@@ -63,7 +63,7 @@ export function ContactSection() {
                   Get In Touch
                 </h3>
                 <div className="space-y-4">
-                  {contactMethods.map((method, index) => (
+                  {contactMethods.map((method) => (
                     <div key={method.label} className="flex items-center gap-3">
                       <div className="p-2 bg-muted rounded-lg border border-dashed-indie">
                         {method.icon}

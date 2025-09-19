@@ -85,7 +85,7 @@ export function AboutSection() {
 
         {/* Experience Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {experience.map((exp, index) => (
+          {experience.map((exp) => (
             <div key={exp.role}>
               <Card className="h-full border border-dashed-indie">
                 <CardHeader>
@@ -121,7 +121,7 @@ export function AboutSection() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skills.map((skill, index) => (
+          {skills.map((skill) => (
             <div key={skill.category}>
               <Card className="border border-dashed-indie">
                 <CardHeader className="pb-4">

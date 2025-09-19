@@ -39,7 +39,7 @@ export function HeroSection() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-          {skills.map((skill, index) => (
+          {skills.map((skill) => (
             <div key={skill}>
               <Badge variant="secondary" className="text-sm py-2 px-4 font-medium border-dashed-indie">
                 {skill}
