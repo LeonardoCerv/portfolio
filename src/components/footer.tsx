@@ -33,20 +33,13 @@ export function Footer() {
           <div className="text-center md:text-left">
             <p className="font-semibold">Leonardo Cervantes</p>
             <p className="text-sm text-muted-foreground italic">
-              Full Stack Developer & Tech Explorer
+              CS Student @ Tec de Monterrey
             </p>
           </div>
 
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <button
-              onClick={toggleTheme}
-              className="hover:text-primary transition-colors p-2 rounded-lg hover:bg-muted"
-              aria-label="Toggle theme"
-            >
-              {isDark ? <SunIcon className="w-5 h-5" /> : <MoonIcon className="w-5 h-5" />}
-            </button>
             <a
-              href="https://github.com/LeonardoCerv"
+              href="https://github.com/leonardocerv"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors flex items-center gap-1"
@@ -55,7 +48,7 @@ export function Footer() {
               <span className="text-xs">↗</span>
             </a>
             <a
-              href="https://linkedin.com/in/leonardo-cervantes"
+              href="https://linkedin.com/in/leonardocerv"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors flex items-center gap-1"
@@ -64,18 +57,12 @@ export function Footer() {
               <span className="text-xs">↗</span>
             </a>
             <a
-              href="mailto:leonardo@example.com"
+              href="mailto:leocerva29@gmail.com"
               className="hover:text-primary transition-colors flex items-center gap-1"
             >
               <span>Email</span>
             </a>
           </div>
-        </div>
-
-        <div className="border-t border-dashed-indie mt-8 pt-4 text-center text-sm text-muted-foreground">
-          <p className="italic">
-            Built with Next.js 15, Tailwind CSS, and Framer Motion • Made with care in 2025
-          </p>
         </div>
       </div>
     </footer>
