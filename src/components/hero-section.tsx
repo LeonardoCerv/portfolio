@@ -337,7 +337,19 @@ export function HeroSection() {
             <Button size="lg" className="px-8 py-3 text-base font-semibold border-dashed-indie">
               View My Work ↓
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-3 text-base border-dashed-indie">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="px-8 py-3 text-base border-dashed-indie"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/LeonardoCervantes_Resume.pdf';
+                link.download = 'LeonardoCervantes_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
               Download Resume
             </Button>
           </div>
