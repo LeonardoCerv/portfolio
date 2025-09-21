@@ -254,14 +254,9 @@ export function ProjectsSection() {
             <h2 className="text-3xl md:text-4xl font-bold mb-2">Featured Projects</h2>
             <div className="w-full h-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent rounded-full" />
           </div>
-          <div className="border-dashed-indie p-6 bg-muted/20 rounded-lg max-w-2xl mx-auto">
-            <p className="text-lg text-muted-foreground leading-relaxed italic">
-              A showcase of innovative projects spanning blockchain, AI, web development, and infrastructure.
-            </p>
-            <div className="mt-4 text-sm text-muted-foreground">
-              Built with passion • Production-ready • Always learning
-            </div>
-          </div>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            A showcase of my best projects spanning blockchain, AI, web development, and infrastructure.
+          </p>
         </div>
 
         {/* Featured Projects */}

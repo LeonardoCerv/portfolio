@@ -342,14 +342,6 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-
-
-        {/* Scroll indicator */}
-        <div className="pt-8">
-          <div className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-dashed-indie hover:bg-muted/50 transition-colors cursor-pointer">
-            <ArrowDownIcon className="w-5 h-5 text-muted-foreground" />
-          </div>
-        </div>
       </div>
     </section>
   )
