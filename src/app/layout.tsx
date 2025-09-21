@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Leonardo Cervantes - Full Stack Developer",
-  description: "Full stack developer passionate about building practical solutions with modern technologies. From AI-powered apps to P2P systems, I love exploring and creating.",
+  title: "Leonardo Cervantes - CS Student & Developer",
+  description: "CS student at Tec de Monterrey who likes building web apps and creating things from scratch. Into hackathons, graphic design, and making useful stuff with code.",
 };
 
 export default function RootLayout({

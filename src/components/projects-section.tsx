@@ -3,6 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { MediaShowcase, type MediaItem } from "@/components/ui/media-showcase"
 import { ArrowTopRightOnSquareIcon, CodeBracketIcon } from "@heroicons/react/24/outline"
 
 interface Project {
@@ -15,6 +16,7 @@ interface Project {
   status: "production" | "development" | "completed"
   category: "blockchain" | "ai" | "web" | "infrastructure" | "mobile"
   featured?: boolean
+  media?: MediaItem[]
 }
 
 export function ProjectsSection() {
@@ -28,7 +30,30 @@ export function ProjectsSection() {
       demo: "https://github.com/LeonardoCerv/water-judge/tree/main/src", // External API mentioned in README
       status: "completed",
       category: "ai",
-      featured: true
+      featured: true,
+      // media: [
+      //   {
+      //     type: "image" as const,
+      //     src: "/api/placeholder/400/300",
+      //     title: "Water Analysis Dashboard",
+      //     description: "AI-powered water quality analysis interface",
+      //     thumbnail: "/api/placeholder/400/300"
+      //   },
+      //   {
+      //     type: "video" as const,
+      //     src: "/api/placeholder/video/water-demo.mp4",
+      //     title: "Water Judge Demo",
+      //     description: "Complete workflow demonstration of water quality analysis",
+      //     thumbnail: "/api/placeholder/400/300"
+      //   },
+      //   {
+      //     type: "demo" as const,
+      //     src: "https://github.com/LeonardoCerv/water-judge/tree/main/src",
+      //     title: "Live Demo",
+      //     description: "Interactive demo of the water quality analysis system",
+      //     external: true
+      //   }
+      // ]
     },
     {
       title: "P2P CLI Video Chat",
@@ -38,7 +63,30 @@ export function ProjectsSection() {
       github: "https://github.com/LeonardoCerv/p2p-cli",
       status: "completed",
       category: "infrastructure",
-      featured: true
+      featured: true,
+      // media: [
+      //   {
+      //     type: "video" as const,
+      //     src: "/api/placeholder/video/p2p-demo.mp4",
+      //     title: "P2P Chat Demo",
+      //     description: "Demonstration of peer-to-peer video chat functionality",
+      //     thumbnail: "/api/placeholder/400/300"
+      //   },
+      //   {
+      //     type: "image" as const,
+      //     src: "/api/placeholder/400/300",
+      //     title: "CLI Interface",
+      //     description: "Command-line interface for the P2P video chat",
+      //     thumbnail: "/api/placeholder/400/300"
+      //   },
+      //   {
+      //     type: "demo" as const,
+      //     src: "https://github.com/LeonardoCerv/p2p-cli",
+      //     title: "GitHub Repository",
+      //     description: "Complete source code and documentation",
+      //     external: true
+      //   }
+      // ]
     },
     {
       title: "Web Browsing MCP Server",
@@ -49,7 +97,30 @@ export function ProjectsSection() {
       demo: "https://www.npmjs.com/package/@leonardocerv/web-browsing-mcp",
       status: "production",
       category: "ai",
-      featured: true
+      featured: true,
+      // media: [
+      //   {
+      //     type: "image" as const,
+      //     src: "/api/placeholder/400/300",
+      //     title: "MCP Server Architecture",
+      //     description: "Technical overview of the Model Context Protocol implementation",
+      //     thumbnail: "/api/placeholder/400/300"
+      //   },
+      //   {
+      //     type: "image" as const,
+      //     src: "/api/placeholder/400/300",
+      //     title: "API Documentation",
+      //     description: "Comprehensive API documentation and usage examples",
+      //     thumbnail: "/api/placeholder/400/300"
+      //   },
+      //   {
+      //     type: "demo" as const,
+      //     src: "https://www.npmjs.com/package/@leonardocerv/web-browsing-mcp",
+      //     title: "NPM Package",
+      //     description: "Published package on NPM registry",
+      //     external: true
+      //   }
+      // ]
     },
     {
       title: "Prompt Wisp",
@@ -68,7 +139,30 @@ export function ProjectsSection() {
       github: "https://github.com/LeonardoCerv/clearly-hackmit2025",
       status: "completed",
       category: "mobile",
-      featured: true
+      featured: true,
+      // media: [
+      //   {
+      //     type: "video" as const,
+      //     src: "/api/placeholder/video/clearly-demo.mp4",
+      //     title: "Clearly App Demo",
+      //     description: "Award-winning water quality analysis application",
+      //     thumbnail: "/api/placeholder/400/300"
+      //   },
+      //   {
+      //     type: "image" as const,
+      //     src: "/api/placeholder/400/300",
+      //     title: "Mobile Interface",
+      //     description: "Mobile-responsive design for water quality testing",
+      //     thumbnail: "/api/placeholder/400/300"
+      //   },
+      //   {
+      //     type: "demo" as const,
+      //     src: "https://github.com/LeonardoCerv/clearly-hackmit2025",
+      //     title: "GitHub Repository",
+      //     description: "Complete source code and project documentation",
+      //     external: true
+      //   }
+      // ]
     },
     {
       title: "EigenX TEE Application",
@@ -171,7 +265,7 @@ export function ProjectsSection() {
         </div>
 
         {/* Featured Projects */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 gap-8 mb-20">
           {featuredProjects.map((project) => (
             <div key={project.title} className="group">
               <Card className="h-full border-2 border-dashed-indie relative">
@@ -215,28 +309,35 @@ export function ProjectsSection() {
                       <Button
                         variant="outline"
                         size="sm"
-                        asChild
-                        className="border-dashed-indie"
+                        onClick={() => window.open(project.github, '_blank', 'noopener,noreferrer')}
+                        className="border-dashed-indie flex items-center gap-2"
                       >
-                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                          <CodeBracketIcon className="w-4 h-4" />
-                          Code
-                        </a>
+                        <CodeBracketIcon className="w-4 h-4" />
+                        Code
                       </Button>
                     )}
                     {project.demo && (
                       <Button
                         size="sm"
-                        asChild
-                        className="border-dashed-indie"
+                        onClick={() => window.open(project.demo, '_blank', 'noopener,noreferrer')}
+                        className="border-dashed-indie flex items-center gap-2"
                       >
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                          <ArrowTopRightOnSquareIcon className="w-4 h-4" />
-                          Demo
-                        </a>
+                        <ArrowTopRightOnSquareIcon className="w-4 h-4" />
+                        Demo
                       </Button>
                     )}
                   </div>
+
+                  {/* Media Showcase for Featured Projects */}
+                  {/* Uncomment when you have actual images/videos */}
+                  {/* {project.media && project.media.length > 0 && (
+                    <div className="pt-4 border-t border-dashed mt-4">
+                      <MediaShowcase 
+                        items={project.media}
+                        title="Project Media"
+                      />
+                    </div>
+                  )} */}
                 </CardContent>
               </Card>
             </div>
@@ -286,25 +387,21 @@ export function ProjectsSection() {
                       <Button
                         variant="outline"
                         size="sm"
-                        asChild
-                        className="border-dashed-indie"
+                        onClick={() => window.open(project.github, '_blank', 'noopener,noreferrer')}
+                        className="border-dashed-indie flex items-center gap-2"
                       >
-                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                          <CodeBracketIcon className="w-4 h-4" />
-                          Code
-                        </a>
+                        <CodeBracketIcon className="w-4 h-4" />
+                        Code
                       </Button>
                     )}
                     {project.demo && (
                       <Button
                         size="sm"
-                        asChild
-                        className="border-dashed-indie"
+                        onClick={() => window.open(project.demo, '_blank', 'noopener,noreferrer')}
+                        className="border-dashed-indie flex items-center gap-2"
                       >
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                          <ArrowTopRightOnSquareIcon className="w-4 h-4" />
-                          Demo
-                        </a>
+                        <ArrowTopRightOnSquareIcon className="w-4 h-4" />
+                        Demo
                       </Button>
                     )}
                   </div>
