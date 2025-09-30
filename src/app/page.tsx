@@ -17,10 +17,10 @@ export default function Home() {
       </div>
 
       <div style={{ marginBottom: '30px' }}>
-        <h2 style={{ fontSize: '1.2em', marginBottom: '10px' }}>Things I'm working on</h2>
+        <h2 style={{ fontSize: '1.2em', marginBottom: '10px' }}>Things I&apos;m working on</h2>
         <div style={{ lineHeight: '1.4', fontSize: '0.9em' }}>
           <p style={{ marginBottom: '8px' }}>
-            MXREP. Internship where I'm working on Cowtec, a VR game for farm learning.
+            MXREP. Internship where I&apos;m working on Cowtec, a VR game for farm learning.
           </p>
           <p>
             EZ Badges. A tool similar to Shields.io but with more icons and support for custom images.
@@ -29,13 +29,25 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 style={{ fontSize: '1.2em', marginBottom: '10px' }}>Things I'm proud of</h2>
+        <h2 style={{ fontSize: '1.2em', marginBottom: '10px' }}>Things I&apos;m proud of</h2>
         <div style={{ lineHeight: '1.4', fontSize: '0.9em' }}>
           <p style={{ marginBottom: '8px' }}>
             HackMIT 2025. Won 2nd place in a crypto challenge. I was one of only five students from Mexico there, and the only one who came back with a prize.
           </p>
           <p>
             Being 18 and already in my second year of university.
+          </p>
+        </div>
+      </div>
+
+      <div style={{ marginTop: '30px' }}>
+        <h2 style={{ fontSize: '1.2em', marginBottom: '10px' }}>Things I&apos;m interested in</h2>
+        <div style={{ lineHeight: '1.4', fontSize: '0.9em' }}>
+          <p style={{ marginBottom: '8px' }}>
+            Fintech. Exploring how technology reshapes payments, crypto, and financial systems.
+          </p>
+          <p>
+            Graphic design. Digital design and how everything works together.
           </p>
         </div>
       </div>
