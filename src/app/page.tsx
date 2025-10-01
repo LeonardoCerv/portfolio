@@ -7,7 +7,7 @@ export default function Home() {
         <p className="text-sm font-light mb-2">
           I&apos;m currently studying at Tecnológico de Monterrey in Queretaro.
           <br />
-          I build things when I can't find what I need.
+          I build things when I can&apos;t find what I need.
         </p>
         <a href="/LeonardoCervantes_Resume.pdf" className="text-[#007acc] no-underline text-sm font-light ">Download CV</a>
       </div>
@@ -54,7 +54,7 @@ export default function Home() {
           </p>
           <p className="">
             <span className="font-medium">ez badges. </span> 
-            Shields.io works, but it's limited. I added more icons and custom image support so badges can actually represent you.
+            Shields.io works, but it&apos;s limited. I added more icons and custom image support so badges can actually represent you.
           </p>
         </div>
       </div>
