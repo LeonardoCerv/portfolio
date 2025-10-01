@@ -39,7 +39,7 @@ export default function Home() {
           </p>
           <p className="">
             <span className="font-medium">graphic design. </span>
-            The systems behind why some interfaces feel right and others don't.
+            The systems behind why some interfaces feel right and others don&apos;t.
           </p>
         </div>
       </div>
