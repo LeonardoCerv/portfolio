@@ -13,7 +13,7 @@ export default function Home() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-xl font-light mb-2.5">currently working on</h2>
+        <h2 className="text-xl font-light mb-2.5">what I&apos;m working on</h2>
         <div className="leading-relaxed text-sm font-light flex flex-col gap-2">
           <p className="">
             <span className="font-medium">mxrep internship. </span> 
@@ -31,7 +31,7 @@ export default function Home() {
       </div>
 
       <div className="mb-8">
-        <h2 className="text-xl font-light mb-2.5">what I&apos;m interested in</h2>
+        <h2 className="text-xl font-light mb-2.5">currently interested in</h2>
         <div className="leading-relaxed text-sm font-light flex flex-col gap-2">
           <p className="">
             <span className="font-medium">fintech. </span>
