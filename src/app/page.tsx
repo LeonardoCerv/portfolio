@@ -9,7 +9,7 @@ export default function Home() {
           <br />
           Research Engineer @ <span className="font-medium">Neural Harvest</span>
           <br />
-          I love creating, specially when I can&apos;t find what I need.
+          Hackathon addict. I love creating when I can&apos;t find what I need.
         </p>
         <a href="/LeonardoCervantes_Resume.pdf" className="text-[#007acc] no-underline text-sm font-light ">Download CV</a>
       </div>      
