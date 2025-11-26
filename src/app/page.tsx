@@ -9,7 +9,7 @@ export default function Home() {
           <br />
           Research Engineer @ <span className="font-medium">Neural Harvest</span>
           <br />
-          I love shipping projects, specially when I can&apos;t find what I need.
+          I love creating, specially when I can&apos;t find what I need.
         </p>
         <a href="/LeonardoCervantes_Resume.pdf" className="text-[#007acc] no-underline text-sm font-light ">Download CV</a>
       </div>      
@@ -24,10 +24,6 @@ export default function Home() {
           <p>
             <span className="font-medium">ceams. </span> 
             Running a web design agency. Working on a few client projects, crafting sites that look right and work better.
-          </p>
-          <p>
-            <span className="font-medium">cs student board. </span>
-            Planning events, coordinating logistics, making it easier for students to connect with opportunities.
           </p>
         </div>
       </div>
