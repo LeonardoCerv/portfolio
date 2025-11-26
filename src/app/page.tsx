@@ -5,21 +5,21 @@ export default function Home() {
       <div className="mb-8">
         <h1 className="text-xl font-light leading-loose mb-2.5">Leonardo Cervantes</h1>
         <p className="text-sm font-light mb-2">
-          Computer Science @ <span className="text-blue-500 font-semibold">Tec de Monterrey</span>
+          Computer Science @ <span className="font-medium">Tec de Monterrey</span>
           <br />
-          Research Engineer @ <span className="text-green-500 font-semibold">Neural Harvest</span>
+          Research Engineer @ <span className="font-medium">Neural Harvest</span>
           <br />
           I love shipping projects, specially when I can&apos;t find what I need.
         </p>
         <a href="/LeonardoCervantes_Resume.pdf" className="text-[#007acc] no-underline text-sm font-light ">Download CV</a>
-      </div>
+      </div>      
 
       <div className="mb-8">
         <h2 className="text-xl font-light mb-2.5">what I&apos;m working on</h2>
         <div className="leading-relaxed text-sm font-light flex flex-col gap-2">
           <p className="">
-            <span className="font-medium">Novus. </span>
-            Contributing and presenting academic papers, developing gamified products
+            <span className="font-medium">novus. </span>
+            Contributing and presenting academic papers. Developing gamified experiences to improve learning.
           </p>
           <p>
             <span className="font-medium">ceams. </span> 
@@ -41,7 +41,7 @@ export default function Home() {
           </p>
           <p className="">
             <span className="font-medium">growing. </span>
-            trying to post consistently on linkedin, sharing my projects in communities, etc.
+            Trying to post consistently on linkedin, shipping fast but with quality, sharing my projects in communities, etc.
           </p>
         </div>
       </div>
@@ -55,7 +55,7 @@ export default function Home() {
           </p>
           <p className="">
             <span className="font-medium">content growth. </span>
-            recently hit 10k impressions on linkedin, aiming to scale up to 20k.
+            Recently hit 10k impressions on a single post, looking for that 20k next.
           </p>
         </div>
       </div>
