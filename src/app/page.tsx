@@ -5,9 +5,11 @@ export default function Home() {
       <div className="mb-8">
         <h1 className="text-xl font-light leading-loose mb-2.5">Leonardo Cervantes</h1>
         <p className="text-sm font-light mb-2">
-          I&apos;m currently studying at Tecnológico de Monterrey in Queretaro.
+          Computer Science @ <span className="text-blue-500 font-semibold">Tec de Monterrey</span>
           <br />
-          I build things when I can&apos;t find what I need.
+          Research Engineer @ <span className="text-green-500 font-semibold">Neural Harvest</span>
+          <br />
+          I love shipping projects, specially when I can&apos;t find what I need.
         </p>
         <a href="/LeonardoCervantes_Resume.pdf" className="text-[#007acc] no-underline text-sm font-light ">Download CV</a>
       </div>
@@ -16,8 +18,8 @@ export default function Home() {
         <h2 className="text-xl font-light mb-2.5">what I&apos;m working on</h2>
         <div className="leading-relaxed text-sm font-light flex flex-col gap-2">
           <p className="">
-            <span className="font-medium">mxrep internship. </span> 
-             Contributing to Cowtec, a VR game for learning farm management.
+            <span className="font-medium">Novus. </span>
+            Contributing and presenting academic papers, developing gamified products
           </p>
           <p>
             <span className="font-medium">ceams. </span> 
@@ -34,17 +36,16 @@ export default function Home() {
         <h2 className="text-xl font-light mb-2.5">currently interested in</h2>
         <div className="leading-relaxed text-sm font-light flex flex-col gap-2">
           <p className="">
-            <span className="font-medium">fintech. </span>
-            Payments, crypto, financial infrastructure. How money moves and who gets to move it.
-          </p>
-          <p className="">
             <span className="font-medium">graphic design. </span>
             The systems behind why some interfaces feel right and others don&apos;t.
+          </p>
+          <p className="">
+            <span className="font-medium">growing. </span>
+            trying to post consistently on linkedin, sharing my projects in communities, etc.
           </p>
         </div>
       </div>
 
-      {/**
       <div className="mb-8">
         <h2 className="text-xl font-light mb-2.5">things I&apos;m proud of</h2>
         <div className="leading-relaxed text-sm font-light flex flex-col gap-2">
@@ -53,12 +54,11 @@ export default function Home() {
             Won a crypto challenge. 1 of 5 Mexican students there, and the only one who came back with a prize.
           </p>
           <p className="">
-            <span className="font-medium">ez badges. </span> 
-            Shields.io works, but it&apos;s limited. I added more icons and custom image support so badges can actually represent you.
+            <span className="font-medium">content growth. </span>
+            recently hit 10k impressions on linkedin, aiming to scale up to 20k.
           </p>
         </div>
       </div>
-      */}
 
       <div className="mb-8">
         <h2 className="text-xl font-light mb-2.5">Contact</h2>
